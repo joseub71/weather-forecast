@@ -1,3 +1,6 @@
+### Este proyecto busca informacion del clima de los proximos 5 dias para santiago de chile y en base a eso muestra informacion relacionada para responder cualquier duda o ayuda a la comunidad aqui dejo mi email joseub71@gmail.com
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
