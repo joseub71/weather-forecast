@@ -1,26 +1,76 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// Material-UI components
+import Avatar from '@material-ui/core/Avatar';
+import Home from '@material-ui/icons/Home';
+import Link from "@material-ui/core/Link";
+import Typography from "@material-ui/core/Typography";
+// img Profile
+import check_list from './images/userCreator.jpg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+// Pages
+import Main from './components/main/Main.js';
+import Search from './components/search/Search.js';
+import About from './components/about/About.js';
+
+import './App.css';
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  render() {
+ 
+    return (
+      <div>
+        <header>
+         <Link
+          variant="inherit"
+          href="/"
+          > 
+            <Home style={{color: '#fff', fontSize: '2em', cursor: 'pointer'}}/>
+          </Link>
+
+          <Typography variant="h4" component="h4" align="center" style={{color: 'white'}}>
+                    Prueba para ServiSenior
+          </Typography>
+
+          <Link
+          variant="inherit"
+          href="https://www.linkedin.com/in/jose-useche-9664b7152/"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          > 
+            <Avatar alt="Jose Useche" src={check_list} />
+          </Link>
+
+        </header>
+          
+        <Router>
+            <Switch>
+              <Route
+                exact
+                path='/'
+                render={(props) => <Main {...props} />}
+              />
+              <Route
+                exact
+                path='/search/:date'
+                render={(props) => <Search {...props} />}
+              />
+              <Route
+                exact
+                path='/about'
+                render={(props) => <About {...props} />}
+              />
+              {/* <Redirect to="/home" /> */}
+            </Switch>
+        </Router>
+      </div>
+    )
+  }
 }
 
 export default App;
