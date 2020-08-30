@@ -121,7 +121,8 @@ class Main extends Component {
                     ,&nbsp;puedes ver 
                     <Link
                         variant="inherit"
-                        href="/about"
+                        href="/https://github.com/joseub71/weather-forecast"
+                        target="_blank"
                         > aqui
                     </Link>
                     &nbsp; la informacion del proyecto y las librerias que utilice, me diverti mucho haciendo este proyecto gracias !!
