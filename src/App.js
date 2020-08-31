@@ -10,8 +10,7 @@ import check_list from './images/userCreator.jpg';
 
 // Pages
 import Main from './components/main/Main.js';
-import Search from './components/search/Search.js';
-import About from './components/about/About.js';
+import Search from './components/search/Search';
 
 import './App.css';
 class App extends Component {
@@ -60,12 +59,6 @@ class App extends Component {
                 path='/search/:date'
                 render={(props) => <Search {...props} />}
               />
-              <Route
-                exact
-                path='/about'
-                render={(props) => <About {...props} />}
-              />
-              {/* <Redirect to="/home" /> */}
             </Switch>
         </Router>
       </div>

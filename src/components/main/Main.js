@@ -121,14 +121,14 @@ class Main extends Component {
                     ,&nbsp;puedes ver 
                     <Link
                         variant="inherit"
-                        href="/https://github.com/joseub71/weather-forecast"
+                        href="https://github.com/joseub71/weather-forecast"
                         target="_blank"
                         > aqui
                     </Link>
                     &nbsp; la informacion del proyecto y las librerias que utilice, me diverti mucho haciendo este proyecto gracias !!
                 </Typography>
                 <Typography variant="subtitle2" component="span" paragraph>
-                    Ninguna hazaña save dulce sin esfuerzo
+                    Ninguna hazaña sabe dulce sin esfuerzo
                 </Typography>
             </Box>
 
